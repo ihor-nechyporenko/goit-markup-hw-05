@@ -719,13 +719,16 @@ footer (secondary bg color) #2F303A */
         opacity: 0;
     }
 
-    .portfolio-list:hover .portfolio-thumb::before {
+    .portfolio-link:hover .portfolio-thumb::before,
+    .portfolio-link:focus .portfolio-thumb::before {
         opacity: 1;
     }
 
-    .portfolio-list:hover .hidden-text {
+    .portfolio-link:hover .hidden-text,
+    .portfolio-link:focus .hidden-text {
         opacity: 1;
     }
+
 
     /* .portfolio-thumb:hover::before {
         opacity: 1;
