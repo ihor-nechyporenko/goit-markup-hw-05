@@ -35,6 +35,10 @@ footer (secondary bg color) #2F303A */
       margin-top: 0;
     }
 
+    a {
+        text-decoration: none;
+    }
+
 
 
     :root {
@@ -674,6 +678,62 @@ footer (secondary bg color) #2F303A */
                     0px 4px 4px rgba(0, 0, 0, 0.06), 
                     1px 4px 6px rgba(0, 0, 0, 0.16);
     }
+
+    .portfolio-thumb {
+        position: relative;
+    }
+
+    .hidden-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* width: 100%;
+        height: 100%; */
+        padding-left: 24px;
+        padding-right: 24px;
+        margin: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+
+        font-family: Roboto, sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.56;
+        letter-spacing: 0.03em;
+
+        color: var(--primary-bg-color);
+        opacity: 0;
+    }
+
+
+    .portfolio-thumb::before {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        background-color: rgba(33, 150, 243, 0.9);
+        opacity: 0;
+    }
+
+    .portfolio-list:hover .portfolio-thumb::before {
+        opacity: 1;
+    }
+
+    .portfolio-list:hover .hidden-text {
+        opacity: 1;
+    }
+
+    /* .portfolio-thumb:hover::before {
+        opacity: 1;
+    }
+
+    .portfolio-thumb:hover .hidden-text {
+        opacity: 1;
+    } */
 
     .examples {
         margin-top: 20px;
