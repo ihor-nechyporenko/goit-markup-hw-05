@@ -486,7 +486,7 @@ footer (secondary bg color) #2F303A */
         margin-bottom: 50px;
 
         font-family: Roboto, sans-serif;
-        font-weight: 900;
+        font-weight: 700;
         font-size: 36px;
         line-height: 1.167;
         letter-spacing: 0.03em;
@@ -521,7 +521,7 @@ footer (secondary bg color) #2F303A */
 
     .clients-link:hover,
     .clients-link:focus {
-        border-color: var(--accent-color);;
+        border-color: var(--accent-color);
     }
 
     .clients-flexbox > li:not(:last-child) {
@@ -624,6 +624,54 @@ footer (secondary bg color) #2F303A */
 
     .join-container {
         padding-top: 12px;
+    }
+
+    .backdrop {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .is-hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+
+        min-width: 528px;
+        min-height: 581px;
+        background-color: var(--primary-bg-color);
+
+    }
+
+    .btn-close {
+        width: 30px;
+        height: 30px;
+        margin-left: auto;
+        margin-right: 8px;
+        margin-top: 8px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        background-color: var(--primary-bg-color);
+        cursor: pointer;
+    }
+
+    .icon-close {
+
     }
 
 
