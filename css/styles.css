@@ -760,7 +760,6 @@ footer (secondary bg color) #2F303A */
     .filter {
         display: flex;
         justify-content: center;
-        /* paddind or margin???? */
         padding-top: 94px;
         padding-bottom: 50px;
     }
@@ -802,7 +801,7 @@ footer (secondary bg color) #2F303A */
 
     .portfolio-thumb {
         position: relative;
-        /* overflow: hidden; */
+        overflow: hidden;
     }
 
     .hidden-text {
@@ -820,75 +819,27 @@ footer (secondary bg color) #2F303A */
         line-height: 1.56;
         letter-spacing: 0.03em;
 
-        color: red;
-
-        
-
-        /* color: var(--primary-bg-color); */
-
-        /* transform: translateY(100%);
-        transition-property: transform;
-        transition-duration: 2250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
-        /* opacity: 0; */
+        color: var(--primary-bg-color);
     }
 
     .portfolio-overlay {
-        position: relative;
+        position: absolute;
         width: 370px;
         height: 294px;
         top: 0;
         left: 0;
         background-color: rgba(33, 150, 243, 0.9);
 
-        transform: translateY(-100%);
-        transition-property: transform;
-        transition-duration: 2250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .portfolio-link:hover .portfolio-overlay {
-        transform: translateY(0);
-    }
-
-
-    /* .portfolio-thumb::before {
-        content: '';
-        display: inline-block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-
-        background-color: rgba(33, 150, 243, 0.9);
-
         transform: translateY(100%);
         transition-property: transform;
-        transition-duration: 2250ms;
+        transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        /* opacity: 0; */
-    } */
+    }
 
-    /* .portfolio-link:hover .portfolio-thumb::before {
+    .portfolio-link:hover .portfolio-overlay,
+    .portfolio-link:focus .portfolio-overlay {
         transform: translateY(0);
     }
-
-    .portfolio-link:hover .hidden-text {
-        transform: translate(0, -50%);
-    }
-
-    .portfolio-link:hover .portfolio-thumb::before,
-    .portfolio-link:focus .portfolio-thumb::before {
-        opacity: 1;
-    }
-
-    .portfolio-link:hover .hidden-text,
-    .portfolio-link:focus .hidden-text {
-        opacity: 1;
-    } */
-
-
 
     .examples {
         margin-top: 20px;
